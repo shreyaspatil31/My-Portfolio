@@ -1,0 +1,449 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light blue background */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Header styles */
+header {
+    background-color: #4a90e2; /* Medium blue for header */
+    color: #fff; /* White text color for contrast */
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    color: #fff; /* White text color for links */
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #d0e7ff; /* Lighter blue for hover effect */
+}
+
+/* Main container and sections */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for main content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+#home {
+    padding: 40px 0;
+}
+
+#home .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left-section, .right-section {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.left-section {
+    order: 1;
+}
+
+.right-section {
+    order: 2;
+}
+
+@media (max-width: 768px) {
+    #home .container {
+        flex-direction: column;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        order: initial;
+    }
+}
+
+#designation {
+    font-size: 30px;
+    color: #4a90e2; /* Medium blue for designation */
+}
+
+#job-title {
+    font-size: 28px;
+    color: #357ab8; /* Slightly darker blue for job title */
+    font-weight: bold;
+}
+
+.resume-download {
+    display: inline-block;
+    background-color: #357ab8; /* Darker blue for button */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.resume-download a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.resume-download:hover {
+    background-color: #4a90e2; /* Medium blue for hover effect */
+}
+
+.profile-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 10px;
+    border: 1px solid #eceaeaba;
+    box-shadow: 0 0 10px #cfceceba;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #357ab8; /* Darker blue for social links */
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social-links a:hover {
+    color: #4a90e2; /* Medium blue for hover effect */
+}
+
+/* About section */
+#about {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #f0f8ff; /* Light blue for about section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+    color: #357ab8; /* Darker blue for heading */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: space-between; /* Distribute content evenly */
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%; /* Ensure image fills its container */
+    max-width: 300px; /* Limit image width */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Button styling */
+#hire-me-btn {
+    background-color: #357ab8; /* Darker blue for button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#hire-me-btn:hover {
+    background-color: #4a90e2; /* Medium blue for hover effect */
+}
+
+/* Skills section */
+#skills {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #f0f8ff; /* Light blue for skills section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#skills h2 {
+    color: #357ab8; /* Darker blue for heading */
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills-list li {
+    width: calc(25% - 20px); /* Adjusted to accommodate margin and ensure 4 items per row */
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Adding borders */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.skills-list .symbol {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.skills-list .symbol img {
+    width: 36px; /* Adjust size as needed */
+    height: 36px;
+    object-fit: contain; /* Ensure image fits within container */
+    margin-bottom: 5px;
+}
+
+.skills-list li span {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Ensure all icons (font awesome and custom images) are of the same size */
+.skills-list i, .skills-list img {
+    font-size: 36px; /* Adjust icon size */
+    width: 36px; /* Adjust width for consistency */
+    height: 36px; /* Adjust height for consistency */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.symbol {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.skills-list i {
+    font-size: 50px; /* Adjust icon size */
+}
+
+/* Projects section */
+#projects {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #f0f8ff; /* Light blue for projects section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#projects h2 {
+    color: #357ab8; /* Darker blue for heading */
+}
+
+.project-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.project {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc; /* Add border to project div */
+    border-radius: 5px;
+    background-color: #ffffff; /* White background for project divs */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project h3 {
+    margin-bottom: 10px;
+}
+
+.project p {
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.project button {
+    background-color: #357ab8; /* Darker blue for button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.project button:hover {
+    background-color: #4a90e2; /* Medium blue for hover effect */
+}
+
+/* Ensure responsiveness for project rows */
+@media (max-width: 768px) {
+    .project-row {
+        flex-direction: column;
+    }
+
+    .project {
+        margin: 10px 0;
+    }
+}
+
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff; /* White background for form */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 16px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #357ab8; /* Darker blue for button */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 100%; /* Full width button */
+}
+
+form button:hover {
+    background-color: #4a90e2; /* Medium blue for hover effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    form {
+        padding: 15px;
+    }
+
+    form input,
+    form textarea {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    form button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+
+/* Footer section */
+footer {
+    background-color: #357ab8; /* Darker blue for footer */
+    color: #d7d4d4; /* White text color for contrast */
+    text-align: center;
+    padding: 10px 0; /* Reduced padding */
+    position: relative;
+    clear: both;
+    margin-top: 20px; /* Reduced margin-top */
+    border-top: 1px solid #555;
+    font-size: 14px; /* Adjusted font size */
+}
+
+/* Research section */
+#research {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #f0f8ff; /* Light blue for research section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#research h2 {
+    color: #357ab8; /* Darker blue for heading */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px; /* Consistent with other section headings */
+}
+
+.research-content {
+    text-align: center;
+}
+
+.research-content h3 {
+    color: #357ab8; /* Darker blue for sub-heading */
+    font-size: 24px; /* Slightly smaller than main heading */
+    margin-bottom: 10px;
+}
+
+.research-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.research-content a {
+    color: #357ab8; /* Match link color with other sections */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.research-content a:hover {
+    color: #4a90e2; /* Medium blue for hover effect */
+    text-decoration: underline;
+}
