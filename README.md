@@ -13,7 +13,7 @@ Welcome to my portfolio website! This portfolio showcases my skills, projects, a
 
 ## About Me
 
-I am Shreyas Patil, a passionate software developer specializing in Java, SQL, Machine Learning, and Web Development. I recently completed my B.Tech in Computer Science and Technology with a CGPA of 7.6. My academic journey also includes achieving 76% in Higher Secondary School Certificate (HSC) and 90% in Secondary School Certificate (SSC). I am dedicated to leveraging my skills to create innovative solutions and contribute effectively to the field of software development.
+I am a passionate software developer specializing in Java, SQL, Spring Boot & Machine Learning. I recently completed my B.Tech in Computer Science and Technology with a CGPA of 7.6. My academic journey also includes achieving 76% in Higher Secondary School Certificate (HSC) and 90% in Secondary School Certificate (SSC). I am dedicated to leveraging my skills to create innovative solutions and contribute effectively to the field of software development.
 
 ## Skills
 
